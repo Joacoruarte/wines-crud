@@ -16,6 +16,6 @@ app.use('/wines', productRoutes)
 //     console.log(`error: ${error}`)
 // }
 
-app.listen(8000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log('server running in http://localhost:8000/')
 })
