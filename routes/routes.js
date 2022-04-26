@@ -8,6 +8,10 @@ router.get('/:id', getProduct);
 router.get('/data', getAllData)
 router.post('/', createProduct);
 router.put('/:id', updateProduct);
-router.delete('/:id', deleteProduct);
+router.delete('/:id', deleteProduct); 
+
+router.get("/chavelon" , (req, res) => { 
+    res.json("hola mundo")
+})
 
 export default router;
