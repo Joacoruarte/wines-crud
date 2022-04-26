@@ -2,12 +2,13 @@ import express from "express";
 import cors from 'cors';
 import db from "./database/db.js";
 import productRoutes from './routes/routes.js';
+import router from "./routes/routes.js";
 
 const app = express()
 
 app.use(cors());
 app.use(express.json());
-app.use('/wines', productRoutes)
+app.use(router)
 
 try {
     await db.authenticate()
