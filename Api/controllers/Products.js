@@ -2,7 +2,7 @@ import BrandModel from "../models/BrandModel.js";
 import ProductModel from "../models/ProductModel.js";
 import StrainModel from "../models/StrainModel.js";
 import TypesModel from "../models/TypesModel.js";
- 
+  
 export const getAllProducts = async (req, res)=>{
     try {
         const product = await ProductModel.findAll({
