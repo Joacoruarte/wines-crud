@@ -9,12 +9,12 @@ app.use(cors());
 app.use(express.json());
 app.use('/wines', productRoutes)
 
-try {
-    await db.authenticate()
-    console.log('conexión exitosa')
-} catch (error) {
-    console.log(`error: ${error}`)
-}
+// try {
+//     await db.authenticate()
+//     console.log('conexión exitosa')
+// } catch (error) {
+//     console.log(`error: ${error}`)
+// }
 
 app.listen(8000, ()=>{
     console.log('server running in http://localhost:8000/')
